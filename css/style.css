@@ -4,6 +4,125 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.label {
+    color: white;
+}
+.label-value {
+    color: orange;
+}
+.slide-logo {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.slide-logo img{
+    width: 10% !important;
+    margin: 0 auto;
+    min-width: 200px;
+}
+.subheading{
+      z-index: 2;
+          position: absolute;
+}
+img.flag {
+    height: 18px;
+}
+.a-flag{
+  color: white;
+}
+.makereservation{
+  background: #efefef;
+}
+ul.sub-menu {
+    list-style: none;
+}
+.sub-menu li {
+    border: 1px solid;
+    width: fit-content;
+    position: relative;
+    margin: 8px;
+    padding: 5px 10px;
+    float: left;
+}
+#menu1 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu2 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu3 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu4 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu5 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu6 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu7 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu8 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu9 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu10 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu11 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+#menu12 .menu-wrap{
+    background: url(../images/new/logo1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.welcome {
+    background: #ff980040;
+    color: black;
+    text-align: justify;
+    padding: 10px;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -362,7 +481,8 @@ mark,
 
 .list-unstyled {
   padding-left: 0;
-  list-style: none; }
+  list-style: none;     
+  text-align: center;}
 
 .list-inline {
   padding-left: 0;
@@ -456,7 +576,7 @@ pre {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 100%; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
@@ -478,7 +598,7 @@ pre {
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px; } }
+    max-width: 100%; } }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
@@ -9047,7 +9167,7 @@ h1, h2, h3, h4, h5,
   width: 100%;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1.5px dashed #e6e6e6;
+  border-bottom: 1.5px dashed #e6e6e6 !important;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -9057,8 +9177,8 @@ h1, h2, h3, h4, h5,
     margin-bottom: 0;
     border-bottom: none; }
   .menus .text {
-    width: calc(100% - 80px);
-    padding-left: 20px; }
+    width: 100%;
+}
     .menus .text .one-half {
       width: calc(100% - 70px); }
       .menus .text .one-half h3 {
@@ -9091,7 +9211,9 @@ h1, h2, h3, h4, h5,
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%; 
+display: none;
+     }
   .menus:hover {
     border-color: #e52b34; }
     .menus:hover .text h3 {
